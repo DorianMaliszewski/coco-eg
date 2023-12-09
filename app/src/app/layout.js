@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className='flex flex-col min-h-screen'>
+        <div className='flex flex-col min-h-screen max-w-screen overflow-x-hidden'>
 
           <nav className='navbar bg-base-300'>
             <div className="flex-1">

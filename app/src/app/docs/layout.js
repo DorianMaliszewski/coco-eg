@@ -8,9 +8,21 @@ export const metadata = {
 
 export default function DocsLayout({ children }) {
   return (
-    <div className="grid grid-cols-12 gap-4">
-      <aside className="col-span-3 bg-base-200">
-        <ul className="menu">
+    <div className="drawer lg:drawer-open">
+      <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
+      <div className="drawer-content flex flex-col items-center">
+        <label for="my-drawer-2" className="btn btn-ghost mt-4 btn-block drawer-button lg:hidden">
+          <svg className="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" /></svg>
+          Voir le menu
+        </label>
+        <div className="p-2 lg:p-4 pt-4 lg:pt-10">
+          {children}
+        </div>
+
+      </div>
+      <aside className="drawer-side ">
+        <label for="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label>
+        <ul className="menu bg-base-200">
           <li><Link href="/docs">Introduction</Link></li>
           <li>
             <details>
@@ -119,9 +131,6 @@ export default function DocsLayout({ children }) {
           </li>
         </ul>
       </aside>
-      <div className="col-span-9 p-4 pt-10 mx-auto">
-        {children}
-      </div>
     </div>
   )
 }
