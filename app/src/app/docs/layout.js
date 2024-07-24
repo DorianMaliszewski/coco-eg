@@ -42,6 +42,7 @@ export default function DocsLayout({ children }) {
                 <li><Link href="/docs/begin">Système de fichiers</Link></li>
                 <li><Link href="/docs/begin#configure">Configurer l'EdgeRouter</Link></li>
                 <li><Link href="/docs/begin#load-config">Charger un Fichier de Configuration</Link></li>
+                <li><Link href="/docs/begin#copy-existing">Copier coller sa configuration</Link></li>
               </ul>
             </details>
             <details open>
@@ -49,6 +50,7 @@ export default function DocsLayout({ children }) {
               <ul>
                 <li><Link href="/docs/firewall">Introduction</Link></li>
                 <li><Link href="/docs/firewall#advanced">Les différents traffics</Link></li>
+                <li><Link href="/docs/firewall#groups">Network Groups et Address Groups</Link></li>
                 <li><Link href="/docs/firewall#rules">Rulesets et Rules</Link></li>
                 <li><Link href="/docs/firewall#advanced">Configurations avancées</Link></li>
               </ul>

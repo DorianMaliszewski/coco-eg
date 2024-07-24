@@ -1,4 +1,5 @@
 import Configure from "./configure";
+import CopyExisting from "./copy-existing";
 import Filesystem from "./filesystem";
 import LoadConf from "./load-config";
 
@@ -9,6 +10,7 @@ export default function DocsBegin() {
       <Filesystem />
       <Configure />
       <LoadConf />
+      <CopyExisting />
     </article>
   )
 }

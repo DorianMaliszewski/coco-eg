@@ -1,4 +1,5 @@
 import Advanced from "./advanced";
+import Groups from "./groups";
 import Rules from "./rules";
 import Traffic from "./traffic";
 
@@ -35,6 +36,7 @@ export default function Firewall() {
         </p>
       </section>
       <Traffic />
+      <Groups />
       <Rules />
       <Advanced />
     </article>
