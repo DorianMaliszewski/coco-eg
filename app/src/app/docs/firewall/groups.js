@@ -1,23 +1,23 @@
 export default function Groups() {
   return (
     <section id="groups">
-      <h1>
+      <h2>
         Configuration des Network Groups et Address Groups
-      </h1>
+      </h2>
       <p>
         Ce guide explique comment configurer les Network Groups et Address
         Groups sur un Edge Router, à la fois via la CLI et via le fichier de
         configuration.
       </p>
 
-      <h2>Configuration via la CLI</h2>
-      <h3>Étape 1 : Accéder à la CLI</h3>
+      <h3>Configuration via la CLI</h3>
+      <h4>Étape 1 : Accéder à la CLI</h4>
       <p>Connectez-vous au Edge Router via SSH.</p>
       <ul>
         <code>ssh username@192.168.1.1</code>
       </ul>
 
-      <h3>Étape 2 : Créer un Network Group</h3>
+      <h4>Étape 2 : Créer un Network Group</h4>
       <p>Entrez en mode configuration et ajoutez un Network Group.</p>
       <ul>
         <li>
@@ -36,7 +36,7 @@ export default function Groups() {
         </li>
       </ul>
 
-      <h3>Étape 3 : Créer un Address Group</h3>
+      <h4>Étape 3 : Créer un Address Group</h4>
       <p>En mode configuration, ajoutez un Address Group.</p>
       <ul>
         <li>
@@ -60,8 +60,8 @@ export default function Groups() {
         </li>
       </ul>
 
-      <h2>Configuration via le fichier de configuration</h2>
-      <h3>Étape 1 : Préparer le fichier de configuration</h3>
+      <h3>Configuration via le fichier de configuration</h3>
+      <h4>Étape 1 : Préparer le fichier de configuration</h4>
       <p>
         Créez ou modifiez un fichier de configuration, par exemple{" "}
         <code>config.boot</code>, sur votre ordinateur avec les contenus
